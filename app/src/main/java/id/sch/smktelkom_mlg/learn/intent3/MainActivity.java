@@ -41,7 +41,13 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-
+        findViewById(R.id.imageViewCamera)
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        capturePhoto();
+                    }
+                });
     }
 
     public void dialPhoneNumber(String phoneNumber) {
